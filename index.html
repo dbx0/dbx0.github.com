@@ -1,0 +1,18 @@
+---
+layout: default
+title: home
+---
+
+{% assign latest_post = site.posts.first %}
+{% if latest_post %}
+    <div class="post">
+        <h1 class="post-title">{{ latest_post.title }}</h1>
+        <div class="post-date">{{ latest_post.date | date: "%B %d, %Y" }}</div>
+        <div class="post-content">
+            {{ latest_post.content }}
+        </div>
+    </div>
+{% else %}
+    <p>No posts yet.</p>
+{% endif %}
+

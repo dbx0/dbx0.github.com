@@ -1,0 +1,16 @@
+---
+layout: default
+title: blog
+---
+
+{% for post in site.posts %}
+    <div class="post" style="margin-bottom: 40px;">
+        <h1 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
+        <div class="post-date">{{ post.date | date: "%B %d, %Y" }}</div>
+        <div class="post-content">
+            {{ post.excerpt | default: post.content | truncatewords: 50 }}
+            <a href="{{ post.url | relative_url }}">read more →</a>
+        </div>
+    </div>
+{% endfor %}
+

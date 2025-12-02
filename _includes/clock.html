@@ -1,0 +1,24 @@
+<script type="text/javascript">
+function clock() {
+    const today = new Date();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+    m = zero(m);
+    s = zero(s);
+    document.getElementById('clock').innerHTML =  "[" + h + ":" + m + ":" + s + "]";
+    setTimeout(clock, 1000);
+}
+
+function zero(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', clock);
+} else {
+    clock();
+}
+</script>
+
