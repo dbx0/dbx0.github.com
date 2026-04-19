@@ -1,6 +1,17 @@
 ---
 title: "How to evade program allowlists with Windows DLL sideloading"
 date: 2023-06-21
+description: "A technical deep-dive into Windows DLL sideloading — how attackers exploit legitimate signed executables to load malicious DLLs and bypass application allowlists like Windows Defender Application Control."
+keywords:
+  - DLL sideloading
+  - windows
+  - allowlist bypass
+  - WDAC
+  - application control
+  - malware
+  - evasion
+  - red team
+  - windows security
 ---
 
 Sometimes, when seeking opportunities to explore and gain unauthorized access, you don't have to go to extreme lengths to exploit a highly secure system. Instead, you can focus on breaking an implementation. This means that simple misconfigurations, overlooked elements, or unidentified vulnerabilities in the security measures can provide them with an entry point to cause harm.

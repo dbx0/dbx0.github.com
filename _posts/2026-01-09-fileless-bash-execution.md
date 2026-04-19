@@ -1,6 +1,18 @@
 ---
 title: "Fileless bash execution"
 date: 2026-01-09
+description: "A practical breakdown of fileless bash execution techniques — from curl-pipe-bash to SSH stdin tricks, netcat, socat, tmux, and heredocs — used by attackers to run malicious scripts entirely in memory without touching disk."
+keywords:
+  - fileless malware
+  - bash execution
+  - in-memory execution
+  - antivirus evasion
+  - curl pipe bash
+  - ssh attack
+  - netcat
+  - socat
+  - red team
+  - linux security
 ---
 
 This is one of the ways hackers can run malicious scripts inside a target machine without touching the disk. In this article, I will show you different techniques on how attackers evade detection when running malicious bash scripts by executing them entirely in memory.

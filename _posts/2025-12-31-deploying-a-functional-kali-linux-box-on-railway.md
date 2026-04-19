@@ -1,6 +1,15 @@
 ---
 title: "Deploying a functional Kali Linux box on Railway"
 date: 2025-12-31
+description: "Step-by-step guide to deploying a fully functional Kali Linux environment on Railway with persistent storage, accessible remotely from any browser — no local VM required."
+keywords:
+  - kali linux
+  - railway
+  - cloud hacking environment
+  - remote kali
+  - penetration testing
+  - docker
+  - red team infrastructure
 ---
 
 Ever wanted to have a Kali Linux machine accessible from anywhere without having to pay for expensive cloud virtual machines?
