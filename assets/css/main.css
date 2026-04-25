@@ -223,3 +223,33 @@ body {
     margin: 20px auto;
 }
 
+.project-year {
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project-title {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.project-title a {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+.project-title a:hover {
+    text-decoration: underline;
+}
+
+.project-description {
+    margin: 0;
+}
+
