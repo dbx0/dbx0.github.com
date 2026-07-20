@@ -1,5 +1,5 @@
 ---
-title: "10 thousand AI servers are open to the Internet"
+title: "Thousands of AI servers are open to the Internet"
 date: 2026-04-21
 description: "A technical breakdown of how attackers discover, validate, and exploit publicly exposed Ollama inference servers, covering Shodan queries, masscan, the unauthenticated REST API, compute theft, and how to lock your server down."
 keywords:
@@ -15,7 +15,7 @@ keywords:
   - self-hosted ai
 ---
 
-Tens of thousands of Ollama inference servers are publicly reachable on the internet with no authentication, no access control, and no logging for the operator. This post goes through the full attack chain: how to find these servers, what the API exposes, what the impact looks like at scale, and how to lock things down.
+Thousands of Ollama inference servers are publicly reachable on the internet with no authentication, no access control, and no logging for the operator. This post goes through the full attack chain: how to find these servers, what the API exposes, what the impact looks like at scale, and how to lock things down.
 
 ---
 
@@ -29,6 +29,12 @@ A simple Shodan query returns thousands of results:
 
 ```
 port:11434 product:"Ollama"
+```
+
+You can also use the html hash, which returns hundreds of thousands of servers:
+
+```
+http.html_hash:1964589105
 ```
 
 ### masscan
