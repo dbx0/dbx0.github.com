@@ -19,6 +19,10 @@ defaults:
     values:
       layout: "post"
 
+# Serve dotfiles that Jekyll skips by default
+include:
+  - .env
+
 # Exclude from processing
 exclude:
   - Gemfile
